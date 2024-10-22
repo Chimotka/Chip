@@ -1,0 +1,187 @@
+@font-face{
+    font-family: "Roboto";
+    src: url("../fonts/Roboto.ttf");
+}
+
+@font-face{
+    font-family: "Damione";
+    src: url("../fonts/DaMiOne-Regular.ttf");
+}
+
+body{
+    font-family: "Roboto";
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+.contacts img {
+    height: 30px;
+}
+
+/* справочник начало */
+.flex{
+    display: flex;
+    
+}
+.jc-sb {
+    justify-content: space-between;
+}
+.ai-c{
+    align-items: center;
+}
+.jc-c{
+    justify-content: center;
+}
+.column{
+    flex-direction: column;
+}
+.p-a{
+    position: absolute;
+}
+.zi-1{
+    z-index: 1;
+}
+.zi-2{
+    z-index: 2;
+}
+/* справочник конец */
+
+/* шапка начало */
+header{
+    height: 75vh;
+    background: linear-gradient(#00000075,#ffffff00), 
+    url("../images/header-bg.jpg") no-repeat;
+    background-size: cover;
+    color:#fff;
+}
+
+.header{
+    padding: 20px 0;
+    border-bottom: 1px solid #ffffff95;
+}
+
+.container {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo{
+    font-family: "DaMiOne";
+    font-size: 22px;
+    font-weight: 700;
+    padding: 0 0 0 20px;
+}
+
+nav a{
+   margin: 5px;
+   color:#fff;
+   font-weight: 700;
+}
+
+.contacts img{
+   height: 25px;
+   margin: 0 5px;
+}
+.telephone {
+ margin: 0 10px;
+ font-weight: 600;
+ font-size: 14px;
+}
+
+.button-header{
+    background-color: dodgerblue;
+    color: #fff;
+    padding: 10px 15px;
+    margin: 0 20px 0 0;
+    border-radius: 10px; /*округление углов*/
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.slogan h1{
+    font-family: "DaMiOne";
+    font-size: 100px;
+    margin-top: 60px;
+    font-weight: 700;
+    -webkit-text-stroke: 3px solid #fff; /*обводка текста*/
+    letter-spacing: 15px; /*расстояние между символами*/
+}
+.slogan h3{
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.slogan-block{
+    font-size: 30px;
+    background-color: #fff;
+    padding: 2px 45px;
+    color: #000;
+    mix-blend-mode: screen;
+    letter-spacing: 5px;
+}
+
+.slogan h2{
+    margin-top: 30px;
+    letter-spacing: 7px;
+    font-weight: 400;
+}
+
+/*Основной контент */
+/* Обьекты */
+
+.card-section{
+    width: 70vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -130px;
+}
+
+.card{
+    position: relative;
+       
+}
+
+.card img{
+    width: 100%;
+    aspect-ratio: 1/1.2;
+    object-fit: cover;
+    filter: brightness(75%)
+}
+
+
+.card h3{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 400;
+    margin: 50px 30px;
+}
+.card-text{
+   color: #fff;
+   font-size: 20px;
+    visibility: hidden;
+    margin: 200px 30px 0 30px;
+    
+}
+
+.card:hover .card-text{ 
+    visibility: visible;
+    background-color: #208fffbb;
+       
+}
+
+
+
+
+
+
+
+
